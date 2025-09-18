@@ -1,16 +1,20 @@
-#include<stdio.h>
-int main(){
-int n;
-printf("enter a number :");
-scanf("%d",&n);
-for(int i=1;i<=n;i++){
-    for(int s=1;s<=n-i;s++){
-        printf("  ");
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++) {         
+        for (int j = 1; j <= n; j++) {      
+            if (j + i <= n) {               
+                printf("  ");
+            } else {                     
+                printf("%c ", 'A' + (j + i - n - 1));
+            }
+        }
+        printf("\n");
     }
-    for(int j=0;j<i;j++){
-        printf("%c ",'A'+j);
-    }
-    printf("\n");
-}
+
     return 0;
 }
