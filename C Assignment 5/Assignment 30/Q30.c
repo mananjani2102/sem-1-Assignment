@@ -31,8 +31,7 @@ int main() {
     
         for (int j = 0; j < i; j++) {
             printf("%c", 'A' + j);
-        }
-      
+        }      
         for (int j = i - 2; j >= 0; j--) {
             printf("%c", 'A' + j);
         }
